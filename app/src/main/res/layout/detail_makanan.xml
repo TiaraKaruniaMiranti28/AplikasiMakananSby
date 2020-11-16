@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="30dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/detail_gambar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/semanggi" />
+
+                <TextView
+                    android:id="@+id/detail_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10dp"
+                    android:text="NAMA MAKANAN"
+                    android:textSize="24dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="times new roman"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detail_harga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="harga makanan"
+                android:textSize="14dp"
+                android:fontFamily="times new roman"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/detail_deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="deskripsi makanan"
+                android:textSize="14dp"
+                android:fontFamily="times new roman"
+                android:justificationMode="inter_word"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
